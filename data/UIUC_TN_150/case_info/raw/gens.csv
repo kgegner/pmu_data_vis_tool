@@ -1,0 +1,29 @@
+Gen,,,,,,,,,,,,,,,,
+Number of Bus,Name of Bus,Sub Name of Bus,Area Name of Bus,ID,Status,Gen MW,Gen Mvar,Set Volt,AGC,AVR,Min MW,Max MW,Min Mvar,Max Mvar,Cost Model,Part. Factor
+1,Johnsonville_g4,Johnsonville,TN,1,Closed,1098.17,140.74,1.04,YES,YES,612.78,2042.6,-186.22,952.77,None,20.43
+110,Gallatin (TN)_g1,Gallatin (TN),TN,1,Closed,366.71,113.92,1.04,YES,YES,204.93,683.1,-43.96,382.3,None,6.83
+111,Gallatin (TN)_g2,Gallatin (TN),TN,1,Closed,243.83,75.75,1.04,YES,YES,136.26,454.2,-22.21,174.64,None,4.54
+112,Gallatin (TN)_g3,Gallatin (TN),TN,1,Closed,692.09,215.01,1.04,YES,YES,386.76,1289.2,-117.54,601.35,None,12.89
+113,John Sevier_g1,John Sevier,TN,1,Closed,340.03,102.57,1.04,YES,YES,190.02,633.4,-40.77,354.48,None,6.33
+114,John Sevier_g2,John Sevier,TN,1,Closed,340.03,102.57,1.04,YES,YES,190.02,633.4,-40.77,354.48,None,6.33
+115,John Sevier_g3,John Sevier,TN,1,Closed,147.74,44.56,1.04,YES,YES,82.56,275.2,-13.46,105.81,None,2.75
+116,Johnsonville_g1,Johnsonville,TN,1,Closed,364.62,46.79,1.04,YES,YES,203.76,679.2,-43.71,380.11,None,6.79
+117,Johnsonville_g2,Johnsonville,TN,1,Closed,364.62,46.79,1.04,YES,YES,203.76,679.2,-43.71,380.11,None,6.79
+118,Johnsonville_g3,Johnsonville,TN,1,Closed,364.62,46.79,1.04,YES,YES,203.76,679.2,-43.71,380.11,None,6.79
+119,Johnsonville_g5,Johnsonville,TN,1,Closed,1096.54,140.7,1.04,YES,YES,612.78,2042.6,-186.22,952.77,None,20.43
+120,Kingston_g1,Kingston,TN,1,Closed,238.22,56.25,1.04,YES,YES,133.12,443.75,-21.7,170.62,None,4.44
+121,Kingston_g2,Kingston,TN,1,Closed,238.22,56.25,1.04,YES,YES,133.12,443.75,-21.7,170.62,None,4.44
+122,Kingston_g3,Kingston,TN,1,Closed,711.31,167.96,1.04,YES,YES,397.5,1325,-120.8,618.04,None,13.25
+123,Kingston_g4,Kingston,TN,1,Closed,711.31,167.96,1.04,YES,YES,397.5,1325,-120.8,618.04,None,13.25
+124,Lagoon Creek_g1,Lagoon Creek,TN,1,Closed,363.73,107.58,1.04,YES,YES,203.26,677.55,-43.61,379.19,None,6.78
+125,Lagoon Creek_g2,Lagoon Creek,TN,1,Closed,363.73,107.58,1.04,YES,YES,203.26,677.55,-43.61,379.19,None,6.78
+126,Lagoon Creek_g3,Lagoon Creek,TN,1,Closed,363.73,107.58,1.04,YES,YES,203.26,677.55,-43.61,379.19,None,6.78
+127,Lagoon Creek_g4,Lagoon Creek,TN,1,Closed,363.73,107.58,1.04,YES,YES,203.26,677.55,-43.61,379.19,None,6.78
+128,Lagoon Creek_g5,Lagoon Creek,TN,1,Closed,544.89,161.16,1.04,YES,YES,304.5,1015,-92.54,473.45,None,10.15
+129,Pickwick Landing Dam_g1,Pickwick Landing Dam,TN,1,Closed,184.73,45.45,1.04,YES,YES,103.23,344.1,-16.83,132.3,None,3.44
+130,Sequoyah_g1,Sequoyah,TN,1,Closed,427.86,67.21,1.04,YES,YES,239.1,797,-38.98,306.44,None,7.97
+131,Sequoyah_g2,Sequoyah,TN,1,Closed,427.86,67.21,1.04,YES,YES,239.1,797,-38.98,306.44,None,7.97
+132,Sequoyah_g3,Sequoyah,TN,1,Closed,427.86,67.21,1.04,YES,YES,239.1,797,-38.98,306.44,None,7.97
+133,Sequoyah_g4,Sequoyah,TN,1,Closed,996.07,156.46,1.04,YES,YES,556.63,1855.45,-150.88,683.44,None,18.55
+134,Sequoyah_g5,Sequoyah,TN,1,Closed,996.07,156.46,1.04,YES,YES,556.63,1855.45,-150.88,683.44,None,18.55
+135,Tims Ford_g1,Tims Ford,TN,1,Closed,24.53,17.36,1.04,YES,YES,13.71,45.7,-2.24,17.57,None,0.46

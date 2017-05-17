@@ -1,0 +1,125 @@
+
+# File Name:
+# dataprocessing.kv
+
+# Modified By: K. Gegner
+# Modified On: 5/16/2017
+
+# Functionality:
+# - Defines GUI features for the home screen
+
+# Imports
+#:import COLORS userdef.COLORS
+#:import FONTS userdef.FONTS
+
+
+<ScreenManagement>:
+    id: screen_manager
+    HomeScreen:
+        name: 'home'
+        manager: screen_manager
+    FileSelectScreen:
+        name: 'fileSelect'
+        manager: screen_manager
+
+<TextPopup>:
+    btn: _btn
+    label: _label
+    auto_dismiss: False
+    size_hint: (0.7, 0.6)
+    FloatLayout:
+        Label:
+            # Label settings
+            id: _label
+            pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+            size_hint: (0.9, 0.9)
+            
+            # Label text parameters
+            text_size: self.size
+            font_name: FONTS['open_sans']['regular']
+            font_size: 14
+            halign: 'center'
+            valign: 'middle'
+        Button:
+            id: _btn
+            pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+            size_hint: (0.2, 0.1)
+            on_press:
+                # Change state of button press variable and close popup window
+                self.btn_pressed = True
+                root.dismiss()
+
+<HomeScreen>:
+    canvas:
+        Color:
+            rgba: (0.2, 0.2, 0.2, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Label:
+        pos_hint: {'x': 0, 'top': 1}
+        size_hint: (1, 0.5)
+        text: 'PMU Data Analytics Tool'
+        font_name: FONTS['open_sans']['bold']
+        font_size: 18
+    Button:
+        # Button text parameters
+        text: "Load CSV Files"
+        text_size: self.width - 20, self.height
+        font_name: FONTS['open_sans']['semibold']
+        color: COLORS['white']
+        halign: 'center'
+        valign: 'middle'
+        
+        # Button settings
+        pos_hint: {'center_x': 0.5, 'center_y': 0.2}
+        size_hint: (0.2, 0.2)
+        background_normal: '.graphics/white.png'
+        background_color: COLORS['blue']
+        on_release:
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'fileSelect'
+
+<FileSelectScreen>:
+    canvas:
+        Color:
+            rgba: (0.2, 0.2, 0.2, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    FileChooserListView:
+        # Help: https://github.com/kivy/kivy/blob/master/kivy/uix/filechooser.py
+        id: filechooser
+        filters: [root.is_dir]
+        path: '../data/'
+        dirselect: True
+    
+    Button:
+        # Button text parameters
+        text: "Cancel"
+        font_name: FONTS['open_sans']['semibold']
+        color: COLORS['white']
+        
+        # Button settings
+        pos_hint: {'left': 0, 'bottom': 0}
+        size_hint: (0.48, 0.05)
+        background_normal: '.graphics/white.png'
+        background_color: COLORS['blue']
+        on_release:
+            root.manager.transition.direction = 'right'
+            root.manager.current = 'home'
+    Button:
+        # Button text parameters
+        text: "Load"
+        font_name: FONTS['open_sans']['semibold']
+        color: COLORS['white']
+        
+        # Button settings
+        pos_hint: {'right': 1, 'bottom': 0}
+        size_hint: (0.48, 0.05)
+        background_normal: '.graphics/white.png'
+        background_color: COLORS['blue']
+        on_release:
+            root.manager.all_data = root.load(filechooser.path, filechooser.selection)
+            root.manager.transition.direction = 'left'
+            root.manager.current = 'home'
